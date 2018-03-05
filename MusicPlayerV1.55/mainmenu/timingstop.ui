@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TimingStop</class>
+ <widget class="QWidget" name="TimingStop">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>310</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QRadioButton" name="rb_noSetTimingStop">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>不设置定时停止播放</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="rb_setTimingStop">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置定时停止播放</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_stopTime">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>90</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>停止时间：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_repetition">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>130</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重复频率：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_totalTimeSecond">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>80</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>即</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_confirm">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>270</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_cancel">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>270</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cb_stopTimeHour">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>80</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>00时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>01时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>02时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>03时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>04时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>05时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>06时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>07时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>08时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>09时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>10时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>11时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>12时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>13时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>14时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>15时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>16时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>17时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>18时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>19时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>20时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>21时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>22时</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>23时</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="cb_stopTimeMinute">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>80</y>
+     <width>51</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>00分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>01分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>02分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>03分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>04分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>05分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>06分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>07分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>08分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>09分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>10分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>11分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>12分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>13分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>14分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>15分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>16分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>17分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>18分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>19分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>20分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>21分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>22分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>23分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>24分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>25分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>26分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>27分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>28分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>29分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>30分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>31分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>32分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>33分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>34分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>35分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>36分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>37分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>38分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>39分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>40分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>41分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>42分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>43分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>44分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>45分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>46分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>47分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>48分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>49分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>50分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>51分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>52分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>53分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>54分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>55分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>56分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>57分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>58分</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>59分</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="cb_totalTimeMinute">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>80</y>
+     <width>111</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string/>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>15分钟后</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>30分钟后</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1小时后</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2小时后</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3小时后</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="cb_repetition">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>120</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>仅此一次</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>每日</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pb_apply">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>270</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>应用</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

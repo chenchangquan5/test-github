@@ -1,0 +1,204 @@
+QWidget#MainWidget{
+    background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(30,144,255,255), stop:1 rgba(30,144,255,255));
+}
+
+/*顶层界面皮肤配置*/
+QWidget#wgt_topLayer{
+    min-height: 50px;
+    max-height: 50px;
+}
+
+QPushButton#pb_close, #pb_min, #pb_max, #pb_setting{
+    min-width: 30px;
+    max-width: 30px;
+    min-height: 26px;
+    max-height: 26px;
+}
+
+QPushButton#pb_close{
+    border-image: url(:/skins/images/closeNormal.png);
+}
+
+QPushButton#pb_close:pressed{
+    border-image: url(:/skins/images/closePressed.png);
+}
+
+QPushButton#pb_min{
+    border-image: url(:/skins/images/minimizeNormal.png);
+}
+
+QPushButton#pb_min:pressed{
+    border-image: url(:/skins/images/minimizePressed.png);
+}
+
+QPushButton#pb_max{
+    border-image: url(:/skins/images/maximizeNormal.png);
+}
+
+QPushButton#pb_max:pressed{
+    border-image: url(:/skins/images/maximizePressed.png);
+}
+
+QPushButton#pb_setting{
+    border-image: url(:/skins/images/setNormal.png);
+}
+
+QPushButton#pb_setting:pressed{
+    border-image: url(:/skins/images/setPressed.png);
+}
+
+/*中间层界面皮肤配置*/
+QWidget#wgt_middleLayer{
+    border-image: url(:/skins/icons/back6.png)
+}
+
+QListWidget#lw_songNameList{
+    min-width: 250px;
+    max-width: 250px;
+    color: rgb(160,32,240);
+    font: 16px "微软雅黑";
+    border: none;
+/*    background-color: transparent;*/
+}
+
+QListWidget#lw_songNameList::item{
+    min-height: 35px;
+    max-height: 35px;
+/*    background-color: transparent;*/
+}
+
+QListWidget#lw_songNameList::item:hover{
+    color: rgb(100, 150, 200);
+/*    background-color: transparent;*/
+}
+
+QListWidget#lw_songNameList::item:selected{
+    color: red;
+    text-decoration: underline;
+/*    background-color: transparent;*/
+}
+
+QListWidget#lw_lyricShow{
+    color: rgb(34, 139, 34);
+    text-align: center;
+    vertical-align: middle;
+    font: 75 14pt "微软雅黑";
+    border: none;
+/*    background-color: transparent;*/
+}
+
+QListWidget#lw_lyricShow::item{
+    min-height: 40px;
+    max-height: 40px;
+/*    background-color: transparent;*/
+}
+
+QListWidget#lw_lyricShow::item:selected{
+    color: red;
+    text-decoration: underline;
+/*    background-color: transparent;*/
+}
+
+/*底层界面皮肤配置*/
+QWidget#wgt_bottomLayer{
+    min-height: 100px;
+    max-height: 100px;
+}
+QLabel#lb_songName{
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 30px;
+    max-height: 30px;
+    font: 75 14pt "微软雅黑";
+    color: rgb(255, 255, 255);
+}
+QLabel#lb_position{
+    font: 75 14pt "微软雅黑";
+    color: rgb(255, 255, 255);
+}
+
+QPushButton#pb_player{
+    min-width: 55px;
+    max-width: 55px;
+    min-height: 55px;
+    max-height: 55px;
+    border-image: url(:/skins/images/playStartPressed.png)
+}
+
+QPushButton#pb_prev, #pb_next{
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+}
+
+QPushButton#pb_prev{
+    border-image: url(:/skins/images/previous.png);
+}
+
+QPushButton#pb_prev:pressed{
+    border-image: url(:/skins/images/previousPressed.png);
+}
+
+QPushButton#pb_prev:hover{
+    border-image: url(:/skins/images/previousHover.png);
+}
+
+QPushButton#pb_next{
+    border-image: url(:/skins/images/next.png);
+}
+
+QPushButton#pb_next:pressed{
+    border-image: url(:/skins/images/nextPressed.png);
+}
+
+QPushButton#pb_next:hover{
+    border-image: url(:/skins/images/nextHover.png);
+}
+
+/*QPushButton#pb_playMode{
+        border-image: url(:/skins/images/loopPressed.png);
+}*/
+
+QPushButton#pb_playMode{
+    min-width: 35px;
+    max-width: 35px;
+    min-height: 30px;
+    max-height: 30px;
+    border-image: url(:/skins/images/loopNormal.png);
+}
+
+QLabel#lb_volume{
+    min-width: 18px;
+    max-width: 18px;
+    min-height: 24px;
+    max-height: 24px;
+    border-image: url(:/icons/volume.png);
+}
+
+QSlider::sub-page:horizontal{
+    margin: 5px 0px 5px 0px;
+    background-color: #3fd680;
+}
+
+QSlider#hs_volume{
+    min-width: 80px;
+    max-width: 80px;
+    min-height: 13px;
+    max-height: 13px;
+}
+
+QSlider#hs_volume:handle{
+    border-image: url(:/skins/images/volumeHandle.png);
+}
+
+QSlider#hs_position{
+    min-height: 13px;
+    max-height: 13px;
+}
+
+QSlider#hs_position:handle{
+    border-image: url(:/skins/images/volumeHandle.png);
+}
+
+
